@@ -1,7 +1,7 @@
 require('dotenv').config();
-
+// Im ports the sequelize connection
 const Sequelize = require('sequelize');
-
+// usees the .env info
 const sequelize = process.env.JAWSDB_URL
   ? new Sequelize(process.env.JAWSDB_URL)
   : new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PW, {
