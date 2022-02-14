@@ -11,6 +11,7 @@
   
   ## Installation 
     
+     ```npm i```
      ```node server```
   
   ## Usage 
