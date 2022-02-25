@@ -12,7 +12,14 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(routes);
 
-// Turns on the server 
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}!`);
+// // Turns on the server 
+// app.listen(PORT, () => {
+//   console.log(`App listening on port ${PORT}!`);
+// });
+
+// changed the application to synce sequelize models on server start
+sequelize.sync({ force: false }).then(() => {
+	app.listen(PORT, () =>
+		console.log(`App listening at http://localhost:${PORT} 🚀`)
+	);
 });
