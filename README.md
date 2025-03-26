@@ -1,7 +1,7 @@
 ## E-Commerce Back End
 ## Description 
     
-  This project showcases the use of CRUD operatins as well as showing my abilility to follow best RESTfull practices.
+  This project showcases the use of CRUD operations as well as showing my abilility to follow best REST practices.
 
   ## Table Of Contents
 * [Installation](#installation)
